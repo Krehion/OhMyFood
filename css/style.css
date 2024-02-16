@@ -1,0 +1,20 @@
+/* ########## GÉNÉRAL ########## */
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-style:normal;
+}
+
+:root
+{
+    --primary: #9356DC;
+    --background: #F3F3F3;
+    --grey: #353535;
+    --grey-2: #EAEAEA;
+    --green: #99E2D0;
+    --green-font: #008766;
+    --blue: #89C8FA;
+    --blue-2: #003A68;
+    --button-gradient: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+
