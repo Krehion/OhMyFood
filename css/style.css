@@ -18,3 +18,59 @@
     --button-gradient: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-container
+{
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+/* ########## HEADER ########## */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* ########## LOCALISATION ########## */
+
+/* ########## MAIN-TITLE ########## */
+
+/* ########## FONCTIONNEMENT ########## */
+
+/* ########## RESTAURANTS ########## */
+
+.section-restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--grey-2);
+    padding: 1rem;
+}
+
+.section-restaurants a {
+    width: 100%;
+}
+
+.card
+{
+    background-color: white;
+    border-radius: 20px;
+    align-self: stretch;
+}
+
+.card img {
+    width:100%;
+    object-fit: cover;
+}
+
+/* ########## FOOTER ########## */
+
+/* ########## MEDIA QUERIES ########## */
