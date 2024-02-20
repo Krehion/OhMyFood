@@ -1,0 +1,26 @@
+//SECTION RESTAURANTS
+
+.restaurants {
+    @include container-flex;
+    flex-wrap: wrap;
+    background-color: $color-grey-2;
+    padding: 1rem;
+
+    &__link {
+        width: 100%;
+    }
+}
+
+
+
+.card
+{
+    background-color: white;
+    border-radius: 20px;
+    align-self: stretch;
+}
+
+.card img {
+    width:100%;
+    object-fit: cover;
+}

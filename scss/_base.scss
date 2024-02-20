@@ -1,0 +1,55 @@
+// COLOR VARIABLES
+
+$color-primary: #9356DC;
+$color-background: #F3F3F3;
+$color-grey: #353535;
+$color-grey-2: #EAEAEA;
+$color-green: #99E2D0;
+$color-green-font: #008766;
+$color-blue: #89C8FA;
+$color-blue-2: #003A68;
+$color-button-gradient: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+
+// FONT VARIABLES
+
+$font-primary: "Roboto", sans-serif;
+$font-body-size: 1rem;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// RESPONSIVE BREAKPOINTS
+
+$bp-largest: 1440px;
+$bp-small: 768px;
+
+// MIXINS
+
+@mixin container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// GENERAL
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: $font-weight-regular;
+    text-decoration: none;
+    @include container-flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
