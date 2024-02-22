@@ -1,4 +1,9 @@
 header {
-    display: flex;
+    @include container-flex;
     justify-content: center;
+    padding: 0.88rem;
+
+    .logo {
+        width: 12.3rem; 
+    }
 }
