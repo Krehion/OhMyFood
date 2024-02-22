@@ -8,7 +8,7 @@ $color-green: #99E2D0;
 $color-green-font: #008766;
 $color-blue: #89C8FA;
 $color-blue-2: #003A68;
-$color-button-gradient: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+$color-button-gradient: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 // FONT VARIABLES
 
@@ -51,4 +51,9 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: $font-weight-bold;
 }

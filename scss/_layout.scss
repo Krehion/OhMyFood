@@ -13,6 +13,35 @@
     font-weight: $font-weight-medium;
 }
 
+// SECTION MAIN-TITLE
+
+.main-title {
+    @include container-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: $color-background;
+    text-align: center;
+
+    h1 {
+        padding: 0 1rem;
+    }
+
+    &__p {
+        font-weight: $font-weight-light;
+    }
+
+    &__btn {
+        color: #FFFFFF;
+        font-weight: $font-weight-medium;
+        background: $color-button-gradient;
+        padding: 0.9rem 1.5rem;
+        border-radius: 50rem;
+        margin: 1rem 0;
+    }
+}
+
 // SECTION RESTAURANTS
 
 .restaurants {
