@@ -38,7 +38,72 @@
         background: $color-button-gradient;
         padding: 0.9rem 1.5rem;
         border-radius: 50rem;
-        margin: 1rem 0;
+        margin: 0.8rem 0;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
+    }
+}
+
+// SECTION FONCTIONNEMENT
+
+.fonctionnement {
+    @include container-flex;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+
+    &__list {
+        @include container-flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+
+        &__item {
+            @include container-flex;
+            width: 100%;
+
+            &__number {
+                @include container-flex;
+                justify-content: center;
+                color: #FFFFFF;
+                background-color: $color-primary;
+                border-radius: 50rem;
+                font-size: 0.8rem;
+                font-weight: $font-weight-medium;
+                width: 1.5rem;
+                height: 1.5rem;
+                position: absolute;
+                z-index: 10;
+            }
+
+            &__description {
+                @include container-flex;
+                width: 100%;
+                height: 4.5rem;
+                background-color: $color-background;
+                border-radius: 1.25rem;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
+                position: relative;
+                z-index: 5;
+                margin-left: 0.75rem;
+
+                i {
+                    padding-left: 2rem;
+                    color: #7e7e7e;
+                }
+
+                i.purple {
+                    color: $color-primary;
+                }
+
+                p {
+                    padding-left: 1.5rem;
+                    font-weight: $font-weight-medium;
+                }
+            }
+
+        }
     }
 }
 
