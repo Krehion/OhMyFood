@@ -43,6 +43,7 @@ body {
     font-weight: $font-weight-regular;
     text-decoration: none;
     @include container-flex;
+    justify-content: center;
 }
 
 ul {
@@ -56,4 +57,5 @@ a {
 .section-title {
     font-size: 1.5rem;
     font-weight: $font-weight-bold;
+    padding-bottom: 0.5rem;
 }
