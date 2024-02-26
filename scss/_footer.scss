@@ -1,0 +1,47 @@
+footer {
+    @include container-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #FFFFFF;
+    background-color: $color-grey;
+    padding: 1.4rem 1.6rem;
+
+    .footer__logo {
+        font-family: Shrikhand;
+        font-size: 1.125rem;
+        color: #FFFFFF;
+    }
+
+    .footer__links {
+        @include container-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem; 
+
+        a {
+            color: #FFFFFF;
+        }
+        
+
+        &__imaged {
+            @include container-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.4rem; 
+            font-weight: $font-weight-medium;
+
+            i {
+                width: 18px;
+                margin-right: 0.3rem;
+            }
+        }
+
+        &__blank {
+            @include container-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.4rem; 
+        }
+    }
+}

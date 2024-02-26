@@ -35,7 +35,7 @@ header {
   position: relative;
   z-index: 20;
 }
-header .logo {
+header .header__logo {
   width: 12.3rem;
 }
 
@@ -208,4 +208,49 @@ header .logo {
   top: 1rem;
   right: 1rem;
   z-index: 10;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #FFFFFF;
+  background-color: #353535;
+  padding: 1.4rem 1.6rem;
+}
+footer .footer__logo {
+  font-family: Shrikhand;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+footer .footer__links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+footer .footer__links a {
+  color: #FFFFFF;
+}
+footer .footer__links__imaged {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+footer .footer__links__imaged i {
+  width: 18px;
+  margin-right: 0.3rem;
+}
+footer .footer__links__blank {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
 }/*# sourceMappingURL=style.css.map */
