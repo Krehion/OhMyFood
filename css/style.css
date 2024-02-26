@@ -253,4 +253,40 @@ footer .footer__links__blank {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.4rem;
+}
+
+.heart {
+  font-size: 1.5rem;
+  transition: transform 400ms;
+}
+.heart:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.heart-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.heart-wrapper input {
+  visibility: hidden;
+  margin-left: -100%;
+}
+.heart-wrapper input, .heart-wrapper label {
+  box-sizing: border-box;
+  width: 100%;
+  flex: none;
+}
+.heart-wrapper .heart--filled {
+  display: none;
+  background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heart-wrapper input[type=checkbox]:checked + label > .heart--empty {
+  display: none;
+}
+.heart-wrapper input[type=checkbox]:checked + label > .heart--filled {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

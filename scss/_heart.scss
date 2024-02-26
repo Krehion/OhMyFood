@@ -1,0 +1,42 @@
+.heart {
+    font-size: 1.5rem;
+    transition: transform 400ms;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.15);
+    }
+}
+
+.heart-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+
+    input {
+        visibility: hidden;
+        margin-left: -100%;
+    }
+
+    input, label {
+        box-sizing: border-box; 
+        width: 100%; 
+        flex: none;
+    }
+
+    .heart--filled {
+        display: none;
+        background: $color-button-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    input[type="checkbox"]:checked + label > .heart--empty {
+            display:none;
+    }
+
+    input[type="checkbox"]:checked + label > .heart--filled {
+            display:block;
+    }
+    
+}
