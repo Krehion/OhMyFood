@@ -158,6 +158,11 @@ header .header__logo {
   padding-left: 1.5rem;
   font-weight: 500;
 }
+@media only screen and (min-width: 1024px) {
+  .fonctionnement__list {
+    flex-direction: row;
+  }
+}
 
 .restaurants {
   display: flex;
@@ -198,6 +203,11 @@ header .header__logo {
 .restaurants__card__txt p {
   font-weight: 300;
   line-height: 1.7rem;
+}
+.restaurants__card__txt embed {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 .restaurants__card__new {
   color: #008766;

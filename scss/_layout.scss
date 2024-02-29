@@ -120,7 +120,10 @@
                     font-weight: $font-weight-medium;
                 }
             }
+        }
 
+        @media only screen and (min-width: $bp-small) {
+            flex-direction: row;
         }
     }
 }
@@ -167,6 +170,12 @@
             p {
                 font-weight: $font-weight-light;
                 line-height: 1.7rem;
+            }
+
+            embed {
+                height: 30px;
+                width: 30px;
+                margin-right: 10px;
             }
         }
 
