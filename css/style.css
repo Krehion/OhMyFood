@@ -12,6 +12,11 @@ body {
   justify-content: center;
 }
 
+.main-container {
+  width: 1440px;
+  max-width: 100%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -257,11 +262,9 @@ footer .footer__links__blank {
 
 .heart {
   font-size: 1.5rem;
-  transition: transform 400ms;
 }
 .heart:hover {
   cursor: pointer;
-  transform: scale(1.15);
 }
 
 .heart-wrapper {
@@ -276,6 +279,15 @@ footer .footer__links__blank {
   box-sizing: border-box;
   width: 100%;
   flex: none;
+}
+.heart-wrapper .heart--empty {
+  transition: all 400ms ease-in-out;
+}
+.heart-wrapper .heart--empty:hover {
+  background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .heart-wrapper .heart--filled {
   display: none;
