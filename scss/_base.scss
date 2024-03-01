@@ -31,12 +31,21 @@ $bp-small: 1024px;
     align-items: center;
 }
 
+@mixin full-width-bkgd { //note : works only as long as there's no size in % in the children...
+    margin: 0 -9999rem; // add negative margin
+    padding: 0.25rem 9999rem;// add back negative margin value
+}
+
 // GENERAL
 
 *, *::before, *::after {
     margin: 0;
     padding: 0;
 }
+
+html, body {
+    overflow-x: hidden; // prevents horizontal scrolling caused by full-width-bkgd
+  }
 
 body {
     font-family: $font-primary;
