@@ -225,6 +225,8 @@ header .header__logo {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+  position: relative;
+  z-index: 30;
 }
 .restaurants__card__new {
   color: #008766;
