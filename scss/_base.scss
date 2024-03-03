@@ -31,11 +31,6 @@ $bp-small: 1024px;
     align-items: center;
 }
 
-@mixin full-width-bkgd { //note : works only as long as there's no size in % in the children...
-    margin: 0 -9999rem; // add negative margin
-    padding: 0.25rem 9999rem;// add back negative margin value
-}
-
 // GENERAL
 
 *, *::before, *::after {
@@ -56,8 +51,13 @@ body {
 }
 
 .main-container {
-    width: $bp-largest;
-    max-width: 100%;
+    width: 100%;
+}
+
+.max-width-container {
+    max-width: $bp-largest;
+    width: 100%;
+    margin: 0 auto;
 }
 
 ul {
