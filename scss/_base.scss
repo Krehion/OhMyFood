@@ -38,10 +38,6 @@ $bp-small: 1024px;
     padding: 0;
 }
 
-html, body {
-    overflow-x: hidden; // prevents horizontal scrolling caused by full-width-bkgd
-  }
-
 body {
     font-family: $font-primary;
     font-weight: $font-weight-regular;

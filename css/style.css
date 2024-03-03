@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -391,4 +387,39 @@ footer .footer__links--blank {
 }
 .heart-wrapper input[type=checkbox]:checked + label > .heart--filled {
   display: block;
+}
+
+.loader {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s 3s forwards;
+}
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+.loader__anim {
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  background: radial-gradient(farthest-side, #9356DC 94%, rgba(0, 0, 0, 0)) left/20px 20px no-repeat #F3F3F3;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {
+  50% {
+    background-position: right;
+  }
 }/*# sourceMappingURL=style.css.map */
