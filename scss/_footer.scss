@@ -9,6 +9,11 @@ footer {
         gap: 1rem;
         padding: 1.4rem 1.6rem;
         width: calc(100% - 3.2rem);
+
+        @media only screen and (min-width: $bp-small) {
+            flex-direction: row-reverse;
+            gap: 4rem;
+        }
     }
 
     .footer__logo {
@@ -23,17 +28,30 @@ footer {
         align-items: flex-start;
         gap: 0.4rem; 
 
+        @media only screen and (min-width: $bp-small) {
+            flex-direction: row;
+            gap: 2rem;
+
+            li {
+                padding-right: 1rem;
+            }
+        }
+
         a {
             color: #FFFFFF;
         }
         
 
-        &__imaged {
+        &--imaged {
             @include container-flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 0.4rem; 
             font-weight: $font-weight-medium;
+
+            @media only screen and (min-width: $bp-small) {
+                flex-direction: row;
+            }
 
             i {
                 width: 18px;
@@ -41,11 +59,15 @@ footer {
             }
         }
 
-        &__blank {
+        &--blank {
             @include container-flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 0.4rem; 
+
+            @media only screen and (min-width: $bp-small) {
+                flex-direction: row;
+            }
         }
     }
 }
