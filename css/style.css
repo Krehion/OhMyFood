@@ -36,6 +36,36 @@ a {
   padding-bottom: 0.5rem;
 }
 
+.btn {
+  color: #FFFFFF;
+  font-weight: 500;
+  background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
+  padding: 0.9rem 1.5rem;
+  border-radius: 50rem;
+  margin: 0.8rem 0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: all 0.2s ease-in-out 0s;
+}
+.btn:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.btn__overlay {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-radius: 50rem;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out 0s;
+}
+.btn__overlay:hover {
+  opacity: 0.15;
+}
+
 header {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
@@ -87,35 +117,6 @@ header .header__logo {
 }
 .main-title__p {
   font-weight: 300;
-}
-.main-title__btn {
-  color: #FFFFFF;
-  font-weight: 500;
-  background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
-  padding: 0.9rem 1.5rem;
-  border-radius: 50rem;
-  margin: 0.8rem 0;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  position: relative;
-  transition: all 0.2s ease-in-out 0s;
-}
-.main-title__btn:hover {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
-}
-.main-title__btn__overlay {
-  position: absolute;
-  background-color: #FFFFFF;
-  width: 100%;
-  border-radius: 50rem;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  transition: all 0.2s ease-in-out 0s;
-}
-.main-title__btn__overlay:hover {
-  opacity: 0.15;
 }
 
 .fonctionnement {
@@ -370,7 +371,7 @@ footer .footer__links--blank {
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 400ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .heart-wrapper .heart--empty:hover {
   background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -387,7 +388,7 @@ footer .footer__links--blank {
   -webkit-background-clip: text;
   color: transparent;
   transform: scale(0);
-  transition: all 400ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .heart-wrapper input[type=checkbox]:checked + label > .heart--empty {
   background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
