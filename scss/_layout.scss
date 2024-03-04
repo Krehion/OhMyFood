@@ -1,208 +1,208 @@
 // SECTION LOCALISATION
 
 .location {
-    background-color: $color-grey-2;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    position: relative;
-    z-index: 10; // box-shadow on top of next element
-    color: $color-grey;
-    font-weight: $font-weight-medium;
+  background-color: $color-grey-2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10; // box-shadow on top of next element
+  color: $color-grey;
+  font-weight: $font-weight-medium;
 
-    .max-width-container {
-        @include container-flex;
-        justify-content: center;
-        gap: 1rem;
-        padding: 0.88rem;
-        width: calc(100% - 1.76rem);
-    }
+  .max-width-container {
+    @include container-flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.88rem;
+    width: calc(100% - 1.76rem);
+  }
 }
 
 // SECTION MAIN-TITLE
 
 .main-title {
-    background-color: $color-background;
-    text-align: center;
+  background-color: $color-background;
+  text-align: center;
 
-    .max-width-container {
-        @include container-flex;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 2rem;
-        width: calc(100% - 4rem);
-    }
+  .max-width-container {
+    @include container-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: calc(100% - 4rem);
+  }
 
-    h1 {
-        padding: 0 1rem;
-    }
+  h1 {
+    padding: 0 1rem;
+  }
 
-    &__p {
-        font-weight: $font-weight-light;
-    }
+  &__p {
+    font-weight: $font-weight-light;
+  }
 }
 
 // SECTION FONCTIONNEMENT
 
 .fonctionnement {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 
-    .max-width-container {
-        @include container-flex;
-        flex-direction: column ;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1rem;
-        padding: 2rem 1rem;
-        width: calc(100% - 2rem);
-    }
+  .max-width-container {
+    @include container-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    width: calc(100% - 2rem);
+  }
 
-    &__list {
+  &__list {
+    @include container-flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+    &__item {
+      @include container-flex;
+      width: 100%;
+
+      &__number {
         @include container-flex;
-        flex-direction: column;
-        gap: 1rem;
+        justify-content: center;
+        color: #ffffff;
+        background-color: $color-primary;
+        border-radius: 50rem;
+        font-size: 0.8rem;
+        font-weight: $font-weight-medium;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        z-index: 10;
+      }
+
+      &__description {
+        @include container-flex;
         width: 100%;
+        height: 4.5rem;
+        background-color: $color-background;
+        border-radius: 1.25rem;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+        z-index: 5;
+        margin-left: 0.75rem;
 
-        &__item {
-            @include container-flex;
-            width: 100%;
-
-            &__number {
-                @include container-flex;
-                justify-content: center;
-                color: #FFFFFF;
-                background-color: $color-primary;
-                border-radius: 50rem;
-                font-size: 0.8rem;
-                font-weight: $font-weight-medium;
-                width: 1.5rem;
-                height: 1.5rem;
-                position: absolute;
-                z-index: 10;
-            }
-
-            &__description {
-                @include container-flex;
-                width: 100%;
-                height: 4.5rem;
-                background-color: $color-background;
-                border-radius: 1.25rem;
-                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
-                position: relative;
-                z-index: 5;
-                margin-left: 0.75rem;
-
-                i {
-                    padding-left: 2rem;
-                    color: #7e7e7e;
-                }
-
-                i.purple {
-                    color: $color-primary;
-                }
-
-                p {
-                    padding-left: 1.5rem;
-                    font-weight: $font-weight-medium;
-                }
-            }
+        i {
+          padding-left: 2rem;
+          color: #7e7e7e;
         }
 
-        @media only screen and (min-width: $bp-small) {
-            flex-direction: row;
+        i.purple {
+          color: $color-primary;
         }
+
+        p {
+          padding-left: 1.5rem;
+          font-weight: $font-weight-medium;
+        }
+      }
     }
+
+    @media only screen and (min-width: $bp-small) {
+      flex-direction: row;
+    }
+  }
 }
 
 // SECTION RESTAURANTS
 
 .restaurants {
-    background-color: $color-background;
-    
-    .max-width-container {
-        @include container-flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        padding: 2rem 1rem;
-        width: calc(100% - 2rem);
-        
+  background-color: $color-background;
+
+  .max-width-container {
+    @include container-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  &__cards__wrapper {
+    width: 100%;
+    @include container-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: $bp-small) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 15;
+  }
+
+  &__card {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    align-self: stretch;
+    position: relative;
+
+    @media only screen and (min-width: $bp-small) {
+      width: 49%;
     }
 
-    &__cards__wrapper {
-        width: 100%;
-        @include container-flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-
-        @media only screen and (min-width: $bp-small) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    &__img {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
-    &__link {
-        width: 100%;
-        height: 100%;
-        position:absolute;
-        z-index: 15;
-    }
+    &__txt {
+      @include container-flex;
+      justify-content: space-between;
+      color: #000000;
+      padding: 1rem;
 
-    &__card {
-        width: 100%;
-        background-color: white;
-        border-radius: 20px;
-        align-self: stretch;
+      h3 {
+        font-weight: $font-weight-bold;
+        font-size: 1.125rem;
+      }
+
+      p {
+        font-weight: $font-weight-light;
+        line-height: 1.7rem;
+      }
+
+      embed {
+        height: 32px;
+        width: 34px;
+        margin-right: 10px;
         position: relative;
-
-        @media only screen and (min-width: $bp-small) {
-            width: 49%;
-        }
-
-        &__img {
-        width:100%;
-        height: 10rem;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        }
-
-        &__txt {
-            @include container-flex;
-            justify-content: space-between;
-            color: #000000;
-            padding: 1rem;
-
-            h3 {
-                font-weight: $font-weight-bold;
-                font-size: 1.125rem;
-            }
-
-            p {
-                font-weight: $font-weight-light;
-                line-height: 1.7rem;
-            }
-
-            embed {
-                height: 32px;
-                width: 34px;
-                margin-right: 10px;
-                position: relative;
-                z-index: 30;
-            }
-        }
-
-        &__new {
-            color: $color-green-font;
-            background-color: $color-green;
-            border-radius: 0.125rem;
-            padding: 0.4rem 0.7rem;
-            width: fit-content;
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-            font-size: 0.9rem;
-            font-weight: $font-weight-medium;
-            position: absolute;
-            margin-left: auto; // aligns element to the right
-            top: 1rem; right: 1rem;
-            z-index: 10;
-        }
+        z-index: 30;
+      }
     }
+
+    &__new {
+      color: $color-green-font;
+      background-color: $color-green;
+      border-radius: 0.125rem;
+      padding: 0.4rem 0.7rem;
+      width: fit-content;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      font-size: 0.9rem;
+      font-weight: $font-weight-medium;
+      position: absolute;
+      margin-left: auto; // aligns element to the right
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+    }
+  }
 }

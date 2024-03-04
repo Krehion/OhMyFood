@@ -1,73 +1,72 @@
 footer {
-    color: #FFFFFF;
-    background-color: $color-grey;
-    
-    .max-width-container {
-        @include container-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 1.4rem 1.6rem;
-        width: calc(100% - 3.2rem);
+  color: #ffffff;
+  background-color: $color-grey;
 
-        @media only screen and (min-width: $bp-small) {
-            flex-direction: row-reverse;
-            gap: 4rem;
-        }
+  .max-width-container {
+    @include container-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.4rem 1.6rem;
+    width: calc(100% - 3.2rem);
+
+    @media only screen and (min-width: $bp-small) {
+      flex-direction: row-reverse;
+      gap: 4rem;
+    }
+  }
+
+  .footer__logo {
+    font-family: Shrikhand;
+    font-size: 1.125rem;
+    color: #ffffff;
+  }
+
+  .footer__links {
+    @include container-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+
+    @media only screen and (min-width: $bp-small) {
+      flex-direction: row;
+      gap: 2rem;
+
+      li {
+        padding-right: 1rem;
+      }
     }
 
-    .footer__logo {
-        font-family: Shrikhand;
-        font-size: 1.125rem;
-        color: #FFFFFF;
+    a {
+      color: #ffffff;
     }
 
-    .footer__links {
-        @include container-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.4rem; 
+    &--imaged {
+      @include container-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+      font-weight: $font-weight-medium;
 
-        @media only screen and (min-width: $bp-small) {
-            flex-direction: row;
-            gap: 2rem;
+      @media only screen and (min-width: $bp-small) {
+        flex-direction: row;
+      }
 
-            li {
-                padding-right: 1rem;
-            }
-        }
-
-        a {
-            color: #FFFFFF;
-        }
-        
-
-        &--imaged {
-            @include container-flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.4rem; 
-            font-weight: $font-weight-medium;
-
-            @media only screen and (min-width: $bp-small) {
-                flex-direction: row;
-            }
-
-            i {
-                width: 18px;
-                margin-right: 0.3rem;
-            }
-        }
-
-        &--blank {
-            @include container-flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.4rem; 
-
-            @media only screen and (min-width: $bp-small) {
-                flex-direction: row;
-            }
-        }
+      i {
+        width: 18px;
+        margin-right: 0.3rem;
+      }
     }
+
+    &--blank {
+      @include container-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+
+      @media only screen and (min-width: $bp-small) {
+        flex-direction: row;
+      }
+    }
+  }
 }

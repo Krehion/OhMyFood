@@ -1,0 +1,10 @@
+.resto-img {
+  height: 17.2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.palettedugout {
+    background-image: url(../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  }
+}

@@ -1,59 +1,61 @@
 .heart {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .heart-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 
-    input {
-        visibility: hidden;
-        margin-left: -100%;
+  input {
+    visibility: hidden;
+    margin-left: -100%;
+  }
+
+  input,
+  label {
+    box-sizing: border-box;
+    width: 100%;
+    flex: none;
+  }
+
+  .heart--empty {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      background: $color-button-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+  }
 
-    input, label {
-        box-sizing: border-box; 
-        width: 100%; 
-        flex: none;
-    }
+  .heart--filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $color-button-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(0);
+    transition: all 300ms ease-in-out;
+  }
 
-    .heart--empty {
-        position: absolute;
-        top: 0; left: 0;
-        transition: all 300ms ease-in-out;
+  input[type="checkbox"]:checked + label > .heart--empty {
+    background: $color-button-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-        &:hover {
-        background: $color-button-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        }
-    }
-
-    .heart--filled {
-        position: absolute;
-        top: 0; left: 0;
-        background: $color-button-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transform: scale(0);
-        transition: all 300ms ease-in-out;
-    }
-
-    input[type="checkbox"]:checked + label > .heart--empty {
-        background: $color-button-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    input[type="checkbox"]:checked + label > .heart--filled {
-        transform: scale(1);
-    }
-    
+  input[type="checkbox"]:checked + label > .heart--filled {
+    transform: scale(1);
+  }
 }

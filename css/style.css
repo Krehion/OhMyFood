@@ -82,6 +82,79 @@ header .header__logo {
   width: 12.3rem;
 }
 
+footer {
+  color: #FFFFFF;
+  background-color: #353535;
+}
+footer .max-width-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.4rem 1.6rem;
+  width: calc(100% - 3.2rem);
+}
+@media only screen and (min-width: 1024px) {
+  footer .max-width-container {
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+}
+footer .footer__logo {
+  font-family: Shrikhand;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+footer .footer__links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+@media only screen and (min-width: 1024px) {
+  footer .footer__links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  footer .footer__links li {
+    padding-right: 1rem;
+  }
+}
+footer .footer__links a {
+  color: #FFFFFF;
+}
+footer .footer__links--imaged {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+@media only screen and (min-width: 1024px) {
+  footer .footer__links--imaged {
+    flex-direction: row;
+  }
+}
+footer .footer__links--imaged i {
+  width: 18px;
+  margin-right: 0.3rem;
+}
+footer .footer__links--blank {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+@media only screen and (min-width: 1024px) {
+  footer .footer__links--blank {
+    flex-direction: row;
+  }
+}
+
 .location {
   background-color: #EAEAEA;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -274,77 +347,14 @@ header .header__logo {
   z-index: 10;
 }
 
-footer {
-  color: #FFFFFF;
-  background-color: #353535;
+.resto-img {
+  height: 17.2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-footer .max-width-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.4rem 1.6rem;
-  width: calc(100% - 3.2rem);
-}
-@media only screen and (min-width: 1024px) {
-  footer .max-width-container {
-    flex-direction: row-reverse;
-    gap: 4rem;
-  }
-}
-footer .footer__logo {
-  font-family: Shrikhand;
-  font-size: 1.125rem;
-  color: #FFFFFF;
-}
-footer .footer__links {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.4rem;
-}
-@media only screen and (min-width: 1024px) {
-  footer .footer__links {
-    flex-direction: row;
-    gap: 2rem;
-  }
-  footer .footer__links li {
-    padding-right: 1rem;
-  }
-}
-footer .footer__links a {
-  color: #FFFFFF;
-}
-footer .footer__links--imaged {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.4rem;
-  font-weight: 500;
-}
-@media only screen and (min-width: 1024px) {
-  footer .footer__links--imaged {
-    flex-direction: row;
-  }
-}
-footer .footer__links--imaged i {
-  width: 18px;
-  margin-right: 0.3rem;
-}
-footer .footer__links--blank {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.4rem;
-}
-@media only screen and (min-width: 1024px) {
-  footer .footer__links--blank {
-    flex-direction: row;
-  }
+.resto-img.palettedugout {
+  background-image: url(../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
 .heart {
