@@ -22,30 +22,38 @@
     }
 
     .heart--empty {
+        position: absolute;
+        top: 0; left: 0;
         transition: all 400ms ease-in-out;
 
-                    &:hover {
-            background: $color-button-gradient;
-            background-clip: border-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        &:hover {
+        background: $color-button-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         }
     }
 
     .heart--filled {
-        display: none;
+        position: absolute;
+        top: 0; left: 0;
         background: $color-button-gradient;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        transform: scale(0);
+        transition: all 400ms ease-in-out;
     }
 
     input[type="checkbox"]:checked + label > .heart--empty {
-            display:none;
+        background: $color-button-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     input[type="checkbox"]:checked + label > .heart--filled {
-            display:block;
+        transform: scale(1);
     }
     
 }

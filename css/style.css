@@ -251,8 +251,8 @@ header .header__logo {
   line-height: 1.7rem;
 }
 .restaurants__card__txt embed {
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 34px;
   margin-right: 10px;
   position: relative;
   z-index: 30;
@@ -367,26 +367,36 @@ footer .footer__links--blank {
   flex: none;
 }
 .heart-wrapper .heart--empty {
+  position: absolute;
+  top: 0;
+  left: 0;
   transition: all 400ms ease-in-out;
 }
 .heart-wrapper .heart--empty:hover {
   background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: border-box;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .heart-wrapper .heart--filled {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  transform: scale(0);
+  transition: all 400ms ease-in-out;
 }
 .heart-wrapper input[type=checkbox]:checked + label > .heart--empty {
-  display: none;
+  background: linear-gradient(-3deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .heart-wrapper input[type=checkbox]:checked + label > .heart--filled {
-  display: block;
+  transform: scale(1);
 }
 
 .loader {
