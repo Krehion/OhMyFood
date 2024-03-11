@@ -430,6 +430,18 @@ footer .footer__links--blank {
   color: #99e2d0;
   background-color: #99e2d0;
 }
+.menu__list .delay--0 {
+  animation-delay: 0s;
+}
+.menu__list .delay--1 {
+  animation-delay: 0.1s;
+}
+.menu__list .delay--2 {
+  animation-delay: 0.2s;
+}
+.menu__list .delay--3 {
+  animation-delay: 0.3s;
+}
 .menu__list__item {
   display: flex;
   align-items: center;
@@ -440,6 +452,18 @@ footer .footer__links--blank {
   overflow: hidden;
   position: relative;
   height: 4.5rem;
+  animation: slide 0.75s forwards;
+  opacity: 0;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
 }
 .menu__list__item:hover {
   cursor: pointer;
@@ -607,9 +631,9 @@ footer .footer__links--blank {
   height: 20px;
   border-radius: 20px;
   background: radial-gradient(farthest-side, #9356dc 94%, rgba(0, 0, 0, 0)) left/20px 20px no-repeat #f3f3f3;
-  animation: l2 1s infinite linear;
+  animation: load 1s infinite linear;
 }
-@keyframes l2 {
+@keyframes load {
   50% {
     background-position: right;
   }
