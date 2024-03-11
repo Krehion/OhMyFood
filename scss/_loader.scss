@@ -1,5 +1,5 @@
 .loader {
-  background-color: #ffffff;
+  background-color: rgba($color: #ffffff, $alpha: 0.9);
   position: fixed;
   top: 0;
   width: 100%;
@@ -26,9 +26,9 @@
     border-radius: 20px;
     background: radial-gradient(farthest-side, #9356dc 94%, #0000) left/20px
       20px no-repeat #f3f3f3;
-    animation: l2 1s infinite linear;
+    animation: load 1s infinite linear;
   }
-  @keyframes l2 {
+  @keyframes load {
     50% {
       background-position: right;
     }

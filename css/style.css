@@ -605,7 +605,7 @@ footer .footer__links--blank {
 }
 
 .loader {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 0;
   width: 100%;
