@@ -1,8 +1,16 @@
 # OhMyFood
-Projet de cours : Dynamisez une page web avec des animations CSS
-Parcours OpenClassrooms : Développeur d'application - JavaScript React
+[Lien du déploiement](https://krehion.github.io/OhMyFood/)
 
----
+Projet 3 de la formation *Développeur d'application JavaScript React* d'OpenClassrooms.
 
-Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d’attente dans les restaurants, car leur menu est préparé à l’avance. Plus de perte de temps à consulter la
-carte !
+![OhMyFood mockup](https://raw.githubusercontent.com/Krehion/OhMyFood/refs/heads/main/ohmyfood-mockup.jpg)
+
+Intégration de l'interface mobile-first d'une application de commande de repas en ligne. 
+Création et implémentation d'animations CSS.
+
+### Objectifs pédagogiques du projet
+- Mettre en œuvre des effets CSS graphiques avancés
+- Assurer la cohérence graphique d'un site web
+- Mettre en place une structure de navigation pour un site web
+- Mettre en place son environnement Front-End
+- Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
